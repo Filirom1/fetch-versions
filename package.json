@@ -1,0 +1,35 @@
+{
+  "name": "fetch-versions",
+  "version": "0.1.0",
+  "description": "Fetch projects versions on Internet",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Filirom1/fetch-versions.git"
+  },
+  "keywords": [
+    "fetch",
+    "versions",
+    "github",
+    "sourceforge",
+    "rubygems"
+  ],
+  "author": "Filirom1 <Filirom1@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Filirom1/fetch-versions/issues"
+  },
+  "homepage": "https://github.com/Filirom1/fetch-versions",
+  "devDependencies": {
+    "chai": "^2.2.0",
+    "mocha": "^2.2.1",
+    "smart-vercomp": "^0.1.0"
+  },
+  "dependencies": {
+    "request": "^2.55.0",
+    "xml2js": "^0.4.6"
+  }
+}
