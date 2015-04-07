@@ -29,6 +29,7 @@
     "smart-vercomp": "^0.1.0"
   },
   "dependencies": {
+    "ftp": "^0.3.10",
     "request": "^2.55.0",
     "xml2js": "^0.4.6"
   }

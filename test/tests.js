@@ -3,7 +3,7 @@ var fetcher = require('../lib/pearphp');
 var vercomp = require('smart-vercomp');
 
 function test(lib, id){
-  describe(lib, function(){
+  describe(lib + " '" + id + "'", function(){
     it('should return the list of versions', function(done){
       require('../lib/' + lib)(id, function(err, versions){
         expect(err).to.be.null
@@ -23,4 +23,5 @@ test('rubygems', 'rails');
 test('npmjs', 'request');
 test('github', 'Filirom1/findup');
 test('pypi', 'arrow');
-test('folder', 'http://curl.haxx.se/download/ curl-([0-9\.]*)\.tar\.gz');
+test('http', 'http://curl.haxx.se/download/ curl-([0-9\.]*)\.tar\.gz');
+test('ftp', 'ftp://ftp.gnu.org/gnu/wget/ wget-([0-9\.]*)\.tar\.gz');
