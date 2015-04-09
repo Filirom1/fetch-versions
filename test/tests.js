@@ -1,11 +1,11 @@
 var expect = require('chai').expect;
-var fetcher = require('../lib/pearphp');
+var fetchVersion = require('..');
 var vercomp = require('smart-vercomp');
 
-function test(lib, id){
-  describe(lib + " '" + id + "'", function(){
+function test(backend, id){
+  describe(backend + " '" + id + "'", function(){
     it('should return the list of versions', function(done){
-      require('../lib/' + lib)(id, function(err, versions){
+      fetchVersion(backend, id, function(err, versions){
         expect(err).to.be.null
         console.log(versions)
         expect(versions.length).to.be.gte(2)

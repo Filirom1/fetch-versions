@@ -60,6 +60,13 @@ var ftpDir = function(url, cb){
   });
 }
 
+var fetchVersion = function(backend, id, cb){
+  var backend = require('./lib/' + backend);
+  return backend(id, cb);
+}
+
+
+module.exports = fetchVersion;
 module.exports.getJSON = getJSON;
 module.exports.getXML = getXML;
 module.exports.getHTML = getHTML;
