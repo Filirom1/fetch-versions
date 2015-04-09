@@ -1,6 +1,6 @@
 {
   "name": "fetch-versions",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Fetch projects versions on Internet",
   "main": "index.js",
   "scripts": {
